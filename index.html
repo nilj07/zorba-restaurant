@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Zorba <br> Restaurant</h1>
+        <h3>Pure Veg Punjabi & Chinese, Restaurant</h3>
+        <div class="full-menu">
+            <button class="menu-button" id="button-menu" onclick="scrollToMenu()">VIEW FULL MENU</button>
+        </div>
+    </div>
+
+    <div class="second-page">
+        <div class="left">
+            <img src="dish1.jpg" alt="dish1">
+            <img src="dish2.jpg" alt="dish2">
+            <img src="dish3.jpg" alt="dish3">
+        </div>
+        <div class="right">
+            <h2>About Zorba</h2>
+            <p>All-You-Can-Eat: Indulge in a variety of fresh, flavorful vegetarian dishes with our all-you-can-eat
+                buffet.
+                Vegan-Friendly: Enjoy a selection of delicious vegan dishes that are both satisfying and nutritious.
+                Kid-Friendly Menu: Our kid’s menu features tasty, healthy options that are perfect for the little ones.
+            </p>
+        </div>
+    </div>
+
+    <div class="third-page">
+        <div class="offer-title">
+            <h2>What we offer</h2> <br>
+            <p>here are our most popular menu items</p>
+        </div>
+        <div class="menu">
+            <div class="slider-container">
+                <div class="cards">
+                    <div class="card1">
+                        <img src="paneer-tikka-masala.webp" alt="Dish 1" class="dish-img">
+                        <div class="dish-name">Paneer Tikka masala</div>
+                    </div>
+                    <div class="card1">
+                        <img src="roti.webp" alt="Dish 2" class="dish-img">
+                        <div class="dish-name">Roti</div>
+                    </div>
+                    <div class="card1">
+                        <img src="gobi-machurian.webp" alt="Dish 3" class="dish-img">
+                        <div class="dish-name">manchurian</div>
+                    </div>
+                    <div class="card1">
+                        <img src="ice-cream.webp" alt="Dish 4" class="dish-img">
+                        <div class="dish-name">ice cream</div>
+                    </div>
+                    <div class="card1">
+                        <img src="veg-kabab.jpg" alt="Dish 5" class="dish-img">
+                        <div class="dish-name">veg kabab</div>
+                    </div>
+                    <div class="card1">
+                        <img src="cup-cake.webp" alt="Dish 6" class="dish-img">
+                        <div class="dish-name">cup cakes</div>
+                    </div>
+                </div>
+                <div class="arrow-left" onclick="moveSlide('left')">&#10094;</div>
+                <div class="arrow-right" onclick="moveSlide('right')">&#10095;</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="full-menu">
+        <button class="menu-button" onclick="scrollToMenu()">VIEW FULL MENU</button>
+    </div>
+
+    <div class="experience-view">
+        <h2>Experince view</h2>
+        <div class="grid">
+            <div class="pics">
+                <div class="one"> <img src="hotel-1.jpg" alt="">
+                    <img src="hotel-2.webp" alt="">
+                </div>
+
+                <div class="two"> <img src="hotel-1.jpg" alt="">
+                    <img src="hotel-2.webp" alt="">
+                </div>
+            </div>
+            <div class="video">
+                <video src="hotel-4.mp4" muted autoplay loop></video>
+                <video src="hotel-3.mp4" muted autoplay loop></video>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-card" id="menu">
+        <h2>Our Menu</h2>
+
+        <!-- Paneer Dishes -->
+        <div class="menu-category" onclick="toggleMenu('chineese-rice')">
+            chineese Rice
+            <span class="arrow">▼</span>
+        </div>
+        <ul class="menu-items" id="chineese-rice">
+            <li>Triple Fried Rice -220.00</li>
+            <li>Schezwan fried Rice - 190.00</li>
+            <li>Mushroom Fried Rice -190.00</li>
+            <li>Peking Fried Rice -190.00</li>
+            <li>singapore Fried Rice -190.00</li>
+            <li>Veg Fried Rice -190.00</li>
+            <li>Soya Fried Rice -190.00</li>
+            <li>Paneer Fried Rice -190.00</li>
+            <li>Kaju Fried Rice -205.00</li>
+            <li>Lemon Fried Rice -205.00</li>
+            <li>Chilli Onion Rice -190.00</li>
+            <li>Special jeera Rice -190.00</li>
+        </ul>
+
+        <!-- Rice Dishes -->
+        <div class="menu-category" onclick="toggleMenu('rice-items')">
+            Rice Dishes
+            <span class="arrow">▼</span>
+        </div>
+        <ul class="menu-items" id="rice-items">
+            <li>Veg Fried Rice - ₹150</li>
+            <li>Jeera Rice - ₹130</li>
+            <li>Schezwan Fried Rice - ₹180</li>
+        </ul>
+
+        <!-- Chinese Noodles -->
+        <div class="menu-category" onclick="toggleMenu('noodle-items')">
+            Chinese Noodles
+            <span class="arrow">▼</span>
+        </div>
+        <ul class="menu-items" id="noodle-items">
+            <li>Hakka Noodles - ₹180</li>
+            <li>Schezwan Noodles - ₹200</li>
+            <li>Veg Chow Mein - ₹170</li>
+        </ul>
+
+        <!-- Desserts -->
+        <div class="menu-category" onclick="toggleMenu('dessert-items')">
+            Desserts
+            <span class="arrow">▼</span>
+        </div>
+        <ul class="menu-items" id="dessert-items">
+            <li>Gulab Jamun - ₹50</li>
+            <li>Ras Malai - ₹80</li>
+            <li>Kulfi - ₹60</li>
+        </ul>
+
+        <!-- Beverages -->
+        <div class="menu-category" onclick="toggleMenu('beverage-items')">
+            Beverages
+            <span class="arrow">▼</span>
+        </div>
+        <ul class="menu-items" id="beverage-items">
+            <li>Masala Tea - ₹30</li>
+            <li>Cold Coffee - ₹50</li>
+            <li>Mango Shake - ₹60</li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div class="customer-reviews-section">
+        <h2>Customers Review</h2>
+        <p>What our customers say about our service</p>
+
+        <div class="reviews-container">
+            <!-- Review Card 1 -->
+            <div class="review-card">
+                <div class="profile">
+                    <img src="review-1.webp" alt="Ana Rhodes">
+                    <div class="details">
+                        <h4>Ana Rhodes</h4>
+                        <p>Google</p>
+                    </div>
+                </div>
+                <p class="review-text">Amazing Template. Clean and commented code, beautiful design, and really not hard
+                    to work with.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="review-card">
+                <div class="profile">
+                    <img src="review-2.webp" alt="Morris Clarke">
+                    <div class="details">
+                        <h4>Morris Clarke</h4>
+                        <p>IBM</p>
+                    </div>
+                </div>
+                <p class="review-text">Clean and commented code, beautiful design, and really not hard to work with.</p>
+                <div class="rating">
+                    <span>⭐⭐⭐⭐</span>
+                </div>
+            </div>
+
+            <!-- Add more review cards as needed -->
+        </div>
+    </div>
+
+    <div class="final-page">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Welcome to our restaurant! We serve the best dishes in town.</p>
+            <p>Contact us: +123 456 7890</p>
+            <p>Email: info@zorbarestaurant.com</p>
+        </div>
+
+        <div class="map-container">
+            <!-- Embed the map -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.83904360745!2d77.2167211!3d28.6448002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1234567890abcdef!2sZorba+Restaurant!5e0!3m2!1sen!2sin!4v1612345678901!5m2!1sen!2sin"
+                width="300" height="330" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <br>
+            <!-- Add a clickable link -->
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Zorba+Restaurant" target="_blank"
+                style="font-size: 18px; color: rgb(255, 255, 255); text-decoration: underline;">
+                Get Directions to Zorba Restaurant
+            </a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div class="container">
+        <h1>Lucky Coupon Event</h1>
+        <p>Join our Lucky Coupon Event! Fill out the form below to receive a coupon code. At the end of the month, one lucky winner gets a free meal!</p>
+        <form id="couponForm" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="number" id="phone" placeholder="Enter your mobile number" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="coupon-code" class="coupon-code"></p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
