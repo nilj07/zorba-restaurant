@@ -30,7 +30,7 @@ body{
     margin-right: 900px;
 }
 /* For mobile devices (480px and below) */
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 400px) {
     .header{
         height: 50%;
         width: 100%;
@@ -114,7 +114,7 @@ body{
 .left img:nth-child(3) {
     animation-delay: 6s; /* Third image starts after 6 seconds */
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 400px){
     .second-page{
         width: 100%;
         height: 30vh;
@@ -257,7 +257,7 @@ body{
     justify-content: center; /* Horizontally center text */
     font-family: poppins;
   }
-  @media screen and (max-width: 375px) {
+  @media screen and (max-width: 400px) {
     .offer-title h2 {
         margin-top: 150px;
         font-size: 2rem; /* Further reduce title size */
@@ -356,7 +356,7 @@ body{
     width: 42vh;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 400px){
     .experience-view h2{
         font-size: 25px;
     }
