@@ -566,7 +566,7 @@ body{
 .final-page {
     position: relative;
     height: 100vh;
-    background-image: url('img/dish3.jpg');
+    background-image: url('dish3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -612,6 +612,7 @@ body{
 .map-container iframe{
     border-radius: 20px;
 }
+<<<<<<< HEAD
 @media screen and (max-width: 375px){
     .final-page{
         height: 80vh;
@@ -652,3 +653,5 @@ body{
 
 
 
+=======
+>>>>>>> 236b25b9267bf64480e00cc36600e40c4439fc7f
