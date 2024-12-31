@@ -66,8 +66,4 @@ function addReview(name, company, reviewText, rating, profileImage) {
     reviewsContainer.appendChild(reviewCard);
 }
 
-// Example of adding a review
-addReview('John Doe', 'Facebook', 'Excellent support and design!', 5, 'customer3.jpg');
-
-
 
